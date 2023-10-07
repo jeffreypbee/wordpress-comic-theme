@@ -1,7 +1,8 @@
 :root {
-    --bg-color: #333;
-    --bg-color2: #222;
-    --font-color: #eee;
+    --bg-color: #202326;
+    --bg-color2: #101316;
+    --bg-color3: #292d2f;
+    --font-color: #ddd;
 }
 
 body {
@@ -36,7 +37,12 @@ nav.menu-bar {
 nav.menu-bar a {
     color: white;
     text-decoration: none;
-    margin: 5px;
+    margin: 0px;
+    padding: 5px;
+}
+
+nav.menu-bar a:hover {
+    background-color: var(--bg-color3);
 }
 
 main {
@@ -66,7 +72,7 @@ footer {
     border: 1px solid var(--bg-color2);
     border-radius: 20px;
     margin: 5px;
-    box-shadow: 4px 4px 4px #2225;
+    box-shadow: 4px 4px 4px #1113;
 }
 
 .card h3 {
@@ -80,4 +86,10 @@ footer {
 
 .latest-comic {
     width: 100%;
+}
+
+.rainbow {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, cyan, yellow, magenta);
 }
