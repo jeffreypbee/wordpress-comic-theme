@@ -1,5 +1,6 @@
 :root {
     --bg-color: #333;
+    --bg-color2: #222;
     --font-color: #eee;
 }
 
@@ -21,7 +22,6 @@ body {
 header {
     grid-area: header;
     width: 100%;
-    border-bottom: 1px solid gray;
 }
 
 header h1 {
@@ -29,12 +29,14 @@ header h1 {
 }
 
 nav.menu-bar {
-    background-color: #222;
+    background-color: var(--bg-color2);
+    padding: 5px;
 }
 
 nav.menu-bar a {
     color: white;
     text-decoration: none;
+    margin: 5px;
 }
 
 main {
@@ -47,8 +49,35 @@ footer {
     grid-area: footer;
     width: 100%;
     min-height: 50px;
-    background-color: #222;
+    background-color: var(--bg-color2);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.latest-updates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    border: 1px solid var(--bg-color2);
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 4px 4px 4px #2225;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 1rem;
+    background-color: var(--bg-color2);
+    border-radius: 20px 20px 0 0;
+}
+
+.latest-comic {
+    width: 100%;
 }
