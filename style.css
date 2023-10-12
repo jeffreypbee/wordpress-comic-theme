@@ -97,6 +97,20 @@ h2 {
 
 .latest {
     width: 100%;
+    padding-left: 50%;
+    background: linear-gradient(to right, transparent, var(--bg-color2));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.excerpt {
+    padding: 30px;
+}
+
+.latest .date {
+    text-align: right;
+    padding: 5px;
 }
 
 .rainbow {
