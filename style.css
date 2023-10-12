@@ -3,6 +3,7 @@
     --bg-color2: #101316;
     --bg-color3: #292d2f;
     --font-color: #ddd;
+    --cmy-gradient: linear-gradient(to right, cyan, magenta, yellow);
 }
 
 body {
@@ -21,12 +22,17 @@ body {
 }
 
 header {
+    margin-top: 10px;
     grid-area: header;
-    width: 100%;
+    background: var(--cmy-gradient);
+    border-radius: 20px;
+    padding-bottom: 15px;
 }
 
 header h1 {
-    margin: 5px 0;
+    margin: 0;
+    padding: 5px;
+    color: var(--bg-color);
 }
 
 nav.menu-bar {
@@ -48,7 +54,7 @@ nav.menu-bar a:hover {
 main {
     grid-area: main;
     height: 100%;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 footer {
@@ -64,15 +70,14 @@ footer {
 .latest-updates {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .card {
     width: 200px;
     height: 250px;
-    border: 1px solid var(--bg-color2);
     border-radius: 20px;
-    margin: 5px;
-    box-shadow: 4px 4px 4px #1113;
+    margin: 5px 0;
 }
 
 .card h3 {
@@ -84,12 +89,24 @@ footer {
     border-radius: 20px 20px 0 0;
 }
 
-.latest-comic {
+.latest {
     width: 100%;
 }
 
 .rainbow {
     width: 100%;
     height: 5px;
-    background: linear-gradient(to right, cyan, yellow, magenta);
+    background: var(--cmy-gradient);
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 5px #1115;
+}
+
+.border {
+    border: 2px solid var(--font-color);
+}
+
+section {
+    padding: 0;
 }
